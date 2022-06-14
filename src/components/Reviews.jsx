@@ -17,19 +17,17 @@ export const Reviews = () => {
     <ul>
       {reviews.map((review) => {
         return (
-					<li key={review.review_id}>
+          <li key={review.review_id}
+          className='reviews-card'>
 						<img></img>
 						<h2>{review.title}</h2>
-						<img src={review.review_img_url} alt={review.title} className='review-img'/>
+						<img
+							src={review.review_img_url}
+							alt={review.title}
+							className="review-img"
+						/>
 						<h3 className="review-votes">Votes:{review.votes}</h3>
-						{/* {review.category}
-								{review.owner}
-								{review.review_body}
-								{review.created_at}
-								{review.votes}
-								{review.designer}
-								{review.review_img_url}
-                   {review.comment_count} */}
+						<h4> {review.owner}</h4>
 					</li>
 				);
       })}

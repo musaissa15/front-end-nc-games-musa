@@ -3,8 +3,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  
   .App {
     text-align: centre;
+    background-color: rgb(223, 246, 255);
   }
   .review-img{
     width: 100%;
@@ -17,6 +19,15 @@
 
   .review-votes{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: start;
+  }
+  h1{
+    background-color: rgb(6, 40, 61);
+  }
+  .reviews-card{
+    border: 1rem;
+    background-color:rgb(71, 181, 255);
+    align-items: center;
     
   }
 }
