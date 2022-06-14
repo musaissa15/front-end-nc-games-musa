@@ -14,21 +14,22 @@ export const Reviews = () => {
 
   console.log("ouside mehn <<<<<<<<<");
   return (
-    <ul>
+    <ul className="reviews-ul">
       {reviews.map((review) => {
         return (
-          <li key={review.review_id}
-          className='reviews-card'>
-						<img></img>
-						<h2>{review.title}</h2>
-						<img
-							src={review.review_img_url}
-							alt={review.title}
-							className="review-img"
-						/>
-						<h3 className="review-votes">Votes:{review.votes}</h3>
-						<h4> {review.owner}</h4>
-					</li>
+					<div className="reviews-container">
+						<li key={review.review_id} className="reviews-card">
+							<img></img>
+							<h2>{review.title}</h2>
+							<img
+								src={review.review_img_url}
+								alt={review.title}
+								className="review-img"
+							/>
+							<h3 className="review-votes">Votes:{review.votes}</h3>
+							<h4> {review.owner}</h4>
+						</li>
+					</div>
 				);
       })}
     </ul>

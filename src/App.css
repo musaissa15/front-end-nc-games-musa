@@ -1,12 +1,36 @@
 .App {
   text-align: center;
-}
+  text-align: centre;
+  background-color: rgb(248, 240, 223);
+   
+    
 
+}
+ .reviews-card{
+    border: 10px solid;
+    background-color: rgb(157, 157, 157);
+    align-items: center;
+    border-color: rgb(121, 180, 183);
+    border-width: 0cm;
+    display: inline-block;
+    margin-top: 7rem;
+    
+  }
+
+.reviews-ul{
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.review-img{
+    width: 30rem;
+    
+  }
 @media only screen and (max-width: 600px) {
   
   .App {
     text-align: centre;
-    background-color: rgb(223, 246, 255);
+    background-color: rgb(248, 240, 223);
   }
   .review-img{
     width: 100%;
@@ -22,13 +46,16 @@
     text-align: start;
   }
   h1{
-    background-color: rgb(6, 40, 61);
+    background-color: ;
   }
   .reviews-card{
-    border: 1rem;
-    background-color:rgb(71, 181, 255);
+    border: 10px solid;
+    background-color: rgb(157, 157, 157);
     align-items: center;
-    
+    border-color: rgb(121, 180, 183);
+    border-width: 0cm;
+    margin-right: 2rem;
+   
   }
 }
 
