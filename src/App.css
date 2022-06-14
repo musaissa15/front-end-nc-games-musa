@@ -3,9 +3,11 @@
   text-align: centre;
   background-color: rgb(248, 240, 223);
    
-    
-
 }
+   h1{
+    background-color: #79B4B7;
+  }
+
  .reviews-card{
     border: 10px solid;
     background-color: rgb(157, 157, 157);
@@ -46,7 +48,7 @@
     text-align: start;
   }
   h1{
-    background-color: ;
+    background-color: #79B4B7;
   }
   .reviews-card{
     border: 10px solid;

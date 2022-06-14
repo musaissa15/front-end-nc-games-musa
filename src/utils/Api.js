@@ -4,7 +4,16 @@ const gamesApi = axios.create({
 });
 
 export const getReviews = () => {
-  return gamesApi.get("/reviews").then(({ data }) => {
+  return gamesApi.get("/reviews")
+    .then(({data}) => {
     return data.reviews;
   });
 };
+
+export const getCategoriesByReview_id = (category) => {
+
+  return gamesApi.get(`/reviews?category=${category}`)
+    .then(({data}) => {
+      return data.reviews
+  })
+}
