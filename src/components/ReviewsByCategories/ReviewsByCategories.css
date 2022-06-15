@@ -1,0 +1,17 @@
+@media only screen and (max-width: 600px) {
+  .review-img {
+    width: 30rem;
+    width: 350px;
+    border-width: 3px 3px 5px 5px;
+    border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+    transform: rotate(-2deg);
+    transform: rotate(2deg);
+    margin: 15px;
+    padding: 0 5px;
+    float: right;
+    background: #79b4b7;
+    border: 1px solid #222;
+    box-shadow: 3px 3px 0 #79b4b7;
+    box-shadow: 3px 3px 0;
+  }
+}

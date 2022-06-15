@@ -1,27 +1,30 @@
 import "./App.css";
-import { Header } from "./components/Header";
-import { Home } from "./components/Home";
-import { Reviews } from "./components/Reviews";
+import { Header } from "./components/Header/Header";
+import { Home } from "./components/Home/Home";
+import { Reviews } from "./components/AllReviews/AllReviews";
 import { Route, Routes } from "react-router-dom";
-import {Nav} from "./components/Nav";
-import {SingleCategory} from "./components/SingleCategory";
-import {Categories} from './components/Categories'
+import { Nav } from "./components/Nav/Nav";
+import "./components/Nav/Nav.css";
+import "./components/ReviewsByCategories/ReviewsByCategories.css";
+import "./components/AllReviews/AllReviews.css";
+import "./components/Header/Header.css";
+import "./components/ReviewsByCategories/ReviewsByCategories.css";
 
 function App() {
-	return (
-		<div className="App">
-			<header className="App-header">
-				<Header />
+  return (
+    <div className="App">
+      <header className="App-header">
+        <Header />
       </header>
-      <Nav/>
-			<Routes>
-				<Route Route path="/reviews" element={<Reviews />} />
+      <Nav />
+
+      <Routes>
+        <Route Route path="/reviews" element={<Reviews />} />
         <Route Route path="/" element={<Home />} />
-        <Route Route path="/reviews/:category" element={<SingleCategory />} />
-        <Route Route path='/categories' element={<Categories />} />
-			</Routes>
-		</div>
-	);
+        <Route Route path="/reviews/:category" element={<Reviews />} />
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
