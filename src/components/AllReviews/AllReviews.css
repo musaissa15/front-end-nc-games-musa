@@ -4,6 +4,7 @@
   align-items: center;
   border-color: rgb(121, 180, 183);
   border-width: 0cm;
+  list-style: none;
 }
 
 .reviews-ul {
@@ -49,5 +50,6 @@
     align-items: center;
     border-width: 0cm;
     background-color: rgb(248, 240, 223);
+
   }
 }
