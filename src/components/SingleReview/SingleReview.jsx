@@ -25,18 +25,14 @@ const SingleReview = () => {
 		setVote((currCount) => (
 		currCount + 1
 		))
-		updateVotes(review_id, 1).catch(() => {
-			
-		})
+		updateVotes(review_id, 1)
 	}
 
 	const handleDislikeVote = () => {
 		setVote((currCount) => (
-			currentCount - 1
+			currCount - 1
 		))
-		updateVotes(review_id, -1).then(() => {
-
-		})
+		updateVotes(review_id, -1)
 	}
 	
 
@@ -54,8 +50,12 @@ const SingleReview = () => {
 				<p>{singleReview.review_body}</p>
 
 				<h3>{singleReview.votes + vote}</h3>
-				<button onClick={handleLikeVote} disabled={vote >= 1}>like</button>
-				<button>dislike</button>
+				<button onClick={handleLikeVote} disabled={vote >= 1}>
+					👍
+				</button>
+				<button onClick={handleDislikeVote} disabled={vote >= 1}>
+					👎
+				</button>
 
 				<h4> {singleReview.owner}</h4>
 				<p>{singleReview.category}</p>
