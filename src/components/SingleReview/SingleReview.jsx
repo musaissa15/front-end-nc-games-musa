@@ -5,62 +5,52 @@ import { getSingleReview, updateVotes } from "../../utils/Api";
 const SingleReview = () => {
 	const { review_id } = useParams();
 	const [singleReview, setSingleReview] = useState();
-	const [isLoading, setIsLoading] = useState(true)
-	const [vote, setVote] = useState(0)
-	const [isError, setIsError] = useState(false)
-	
-
-	
+	const [isLoading, setIsLoading] = useState(true);
+	const [vote, setVote] = useState(0);
+	const [isError, setIsError] = useState(false);
 
 	useEffect(() => {
-		getSingleReview(review_id).then(
-			(singleReviewFromApi) => {
-				setSingleReview(singleReviewFromApi)
-				setIsLoading(false)
-			}
-			
-		)},[review_id]
-	)
+		getSingleReview(review_id).then((singleReviewFromApi) => {
+			setSingleReview(singleReviewFromApi);
+			setIsLoading(false);
+		});
+	}, [review_id]);
 
+
+
+	
 
 	const handleLikeVote = () => {
-		setVote((currCount) => (
-			currCount + 1
-		));
+		setVote((currCount) => currCount + 1);
 		updateVotes(review_id, 1).catch((error) => {
 			if (error) {
 				setIsError(true);
 				setVote((currCount) => {
-				
 					return currCount - 1;
-			})
-				
+				});
 			}
-	})
-		setIsError(null);
-	}
+		});
+	};
 
 	const handleDislikeVote = () => {
 		setVote((currCount) => {
-			return  currCount - 1;
-		})
+			return currCount - 1;
+		});
 		updateVotes(review_id, -1).catch((error) => {
 			if (error) {
-				setIsError(true)
+				setIsError(true);
 				setVote((currCount) => {
 					return currCount + 1;
 				});
 			}
-		})
-		
-	}
-	
+		});
+	};
 
- return isLoading ? (
+	return isLoading ? (
 		<p>... Loading</p>
- ) : isError ? ( <p>
-		 ERROR please try again
- </p>) : (
+	) : isError ? (
+		<p>ERROR please try again</p>
+	) : (
 		<div className="singleReview-container">
 			<li>
 				<h2>{singleReview.title}</h2>
@@ -72,10 +62,10 @@ const SingleReview = () => {
 				<p>{singleReview.review_body}</p>
 
 				<h3>{singleReview.votes + vote}</h3>
-				<button onClick={handleLikeVote} disabled={vote  >= 0}>
+				<button onClick={handleLikeVote} disabled={vote >= 0}>
 					👍
 				</button>
-				 <button onClick={handleDislikeVote} disabled={vote > 1 || vote < 0}>
+				<button onClick={handleDislikeVote} disabled={vote > 1 || vote < 0}>
 					👎
 				</button>
 
@@ -83,8 +73,7 @@ const SingleReview = () => {
 				<p>{singleReview.category}</p>
 			</li>
 		</div>
- )
-	
+	);
 };
 
-export default SingleReview
+export default SingleReview;
