@@ -11,9 +11,6 @@ export const getReviews = (category) => {
   });
 };
 
-//we going to acpet categories as parameter
-// if categories is an empty string we are conditional calling reviews again
-//if there is a category then we are calling to /reviews?category=${category}
 
 export const getReviewsByCategories = (category) => {
   return gamesApi.get(`/reviews?category=${category}`).then(({ data }) => {
@@ -26,3 +23,9 @@ export const getCategories = () => {
     return data.categories;
   });
 };
+
+export const getSingleReview = (review_id) => {
+  return gamesApi.get(`/reviews/${review_id}`).then(({data}) => {
+    return data.review
+  })
+}

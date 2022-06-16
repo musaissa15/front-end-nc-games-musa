@@ -17,22 +17,30 @@ const CategoriesNav = ({ setIsCategory }) => {
 	) : (
 		<div>
 			<ul>
+				<li key='all' className="category-nav">
+					<Link
+						to={"/reviews"}
+						value='all'
+						onClick={() => {
+							setIsCategory('');
+						}}
+					>
+						all
+					</Link>
+				</li>
 				{categories.map((category) => {
 					return (
-						<div className="category-nav">
-							<li key={category.slug}>
-								
-                                <Link
-									to={`/reviews/${category.slug}`}
-									value={category.slug}
-									onClick={() => {
-										setIsCategory(category.slug);
-									}}
-								>
-									{category.slug}
-								</Link>
-							</li>
-						</div>
+						<li key={category.slug} className="category-nav">
+							<Link
+								to={"/reviews"}
+								value={category.slug}
+								onClick={() => {
+									setIsCategory(category.slug);
+								}}
+							>
+								{category.slug}
+							</Link>
+						</li>
 					);
 				})}
 			</ul>

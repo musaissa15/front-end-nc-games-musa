@@ -53,8 +53,13 @@ h2 {
 		background-color: rgb(248, 240, 223);
 		margin: 20px;
 		padding: 20px;
+    border-style: initial;
+    border: 10px;
+    
 	}
 	ul {
-		padding: 5px;
+		padding: 20px;
+		margin-right: 20px;
 	}
+
 }

@@ -9,6 +9,7 @@ import "./components/ReviewsByCategories/ReviewsByCategories.css";
 import "./components/AllReviews/AllReviews.css";
 import "./components/Header/Header.css";
 import "./components/Categories/CategoriesNav.css";
+import SingleReview from "./components/SingleReview/SingleReview.jsx";
 
 function App() {
 	return (
@@ -16,12 +17,12 @@ function App() {
 			<header className="App-header">
 				<Header />
 			</header>
+			
 			<Nav />
-
 			<Routes>
-				<Route Route path="/reviews" element={<Reviews />} />
-				<Route Route path="/" element={<Home />} />
-				<Route Route path="/reviews/:category" element={<Reviews />} />
+				<Route  path="/reviews" element={<Reviews />} />
+				<Route  path="/" element={<Home />} />
+				<Route  path="/reviews/:review_id" element={<SingleReview />} />
 			</Routes>
 		</div>
 	);
