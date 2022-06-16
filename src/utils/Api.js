@@ -29,3 +29,10 @@ export const getSingleReview = (review_id) => {
     return data.review
   })
 }
+
+
+export const updateVotes = (review_id, inc_votes) => {
+  return gamesApi.patch(`/reviews/${review_id}`, {inc_votes}).then(({data}) => {
+    return data.review
+  })
+}

@@ -4,12 +4,13 @@ import { Home } from "./components/Home/Home";
 import { Reviews } from "./components/AllReviews/AllReviews";
 import { Route, Routes } from "react-router-dom";
 import { Nav } from "./components/Nav/Nav";
+import SingleReview from "./components/SingleReview/SingleReview.jsx";
 import "./components/Nav/Nav.css";
 import "./components/ReviewsByCategories/ReviewsByCategories.css";
 import "./components/AllReviews/AllReviews.css";
 import "./components/Header/Header.css";
 import "./components/Categories/CategoriesNav.css";
-import SingleReview from "./components/SingleReview/SingleReview.jsx";
+import './components/SingleReview/SingleReview.css'
 
 function App() {
 	return (

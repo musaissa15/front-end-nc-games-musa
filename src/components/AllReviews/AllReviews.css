@@ -34,6 +34,15 @@ h2 {
 		height: auto;
 		align-items: center;
 		align-items: flex-end;
+		transform: rotate(-2deg);
+		transform: rotate(2deg);
+		margin: 15px;
+		padding: 0 5px;
+
+		background: #79b4b7;
+		border: 1px solid #222;
+		box-shadow: 3px 3px 0 #79b4b7;
+		box-shadow: 3px 3px 0;
 	}
 
 	li {
@@ -58,7 +67,7 @@ h2 {
     
 	}
 	ul {
-		padding: 20px;
+		padding: 5px;
 		margin-right: 20px;
 	}
 
