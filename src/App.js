@@ -12,18 +12,19 @@ import "./components/Header/Header.css";
 import "./components/Categories/CategoriesNav.css";
 import './components/SingleReview/SingleReview.css'
 
+
 function App() {
 	return (
 		<div className="App">
 			<header className="App-header">
 				<Header />
 			</header>
-			
+
 			<Nav />
 			<Routes>
-				<Route  path="/reviews" element={<Reviews />} />
-				<Route  path="/" element={<Home />} />
-				<Route  path="/reviews/:review_id" element={<SingleReview />} />
+				<Route path="/reviews" element={<Reviews />} />
+				<Route path="/" element={<Home />} />
+				<Route path="/reviews/:review_id" element={<SingleReview />} />
 			</Routes>
 		</div>
 	);

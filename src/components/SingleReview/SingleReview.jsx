@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { getSingleReview, updateVotes } from "../../utils/Api";
+import { Link, useParams } from "react-router-dom";
+import {getSingleReview, updateVotes} from "../../utils/Api";
+import Comments from "../Comments/Comments";
+
 
 const SingleReview = () => {
 	const { review_id } = useParams();
@@ -50,8 +52,9 @@ const SingleReview = () => {
 		<p>... Loading</p>
 	) : isError ? (
 		<p>ERROR please try again</p>
-	) : (
-		<div className="singleReview-container">
+		) : (
+			
+			<div className="singleReview-container">
 			<li>
 				<h2>{singleReview.title}</h2>
 				<img
@@ -70,9 +73,11 @@ const SingleReview = () => {
 				</button>
 
 				<h4> {singleReview.owner}</h4>
-				<p>{singleReview.category}</p>
-			</li>
-		</div>
+						<p>{singleReview.category}</p>
+					</li>
+				
+					<Comments/>
+		</div>	
 	);
 };
 
