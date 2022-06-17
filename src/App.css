@@ -2,12 +2,12 @@
 	text-align: center;
 	text-align: centre;
 
-	background-color: #79b4b7;
+	background-color: #222831;
 }
 
 @media only screen and (max-width: 600px) {
 	.App {
 		text-align: center;
-		background-color: #79b4b7;
+		background-color: #222831;
 	}
 }

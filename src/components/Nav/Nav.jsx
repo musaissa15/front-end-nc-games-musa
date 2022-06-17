@@ -7,11 +7,10 @@ export const Nav = () => {
       <nav className="nav-bar">
         <Link to="/" className="nav-home">Home</Link>
         <Link to="/reviews" className="nav-reviews">Reviews</Link>
+        <Link to='/users'>Users</Link>
       </nav>
     </div>
   );
 };
 
-//fetch categories
-//hydrate nav
-//get buttons ready
+

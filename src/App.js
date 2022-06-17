@@ -11,6 +11,8 @@ import "./components/AllReviews/AllReviews.css";
 import "./components/Header/Header.css";
 import "./components/Categories/CategoriesNav.css";
 import './components/SingleReview/SingleReview.css'
+import './components/Comments/Comments.css'
+import Users from "./components/Users/Users";
 
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
 				<Route path="/reviews" element={<Reviews />} />
 				<Route path="/" element={<Home />} />
 				<Route path="/reviews/:review_id" element={<SingleReview />} />
+				<Route path="/users" element={<Users />} />
 			</Routes>
 		</div>
 	);

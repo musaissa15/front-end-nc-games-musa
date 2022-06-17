@@ -42,4 +42,11 @@ export const getCommentsById = (review_id) => {
     return data.comments
 
   })
-} 
+};
+
+export const getUsers = () => {
+  return gamesApi.get('/users').then(({data}) => {
+    console.log(data);
+    return data.users
+  })
+}
