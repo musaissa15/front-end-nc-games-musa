@@ -1,0 +1,30 @@
+import React, { useEffect, useState } from "react";
+import { getUsers } from "../../utils/Api";
+
+export default function Users() {
+  const [theUsers, setTheUsers] = useState([]);
+  useEffect(() => {
+    getUsers().then((usersFromApi) => {
+      setTheUsers(usersFromApi);
+    });
+  }, []);
+  return (
+    <div>
+      Users
+      <ul>
+        {theUsers.map((theUser) => {
+          return (
+            <li key={theUser.username}>
+              <h4>{theUser.username}</h4>
+              <img
+                src={theUser.avatar_url}
+                alt={theUser.username}
+                className="user-img"
+              />
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+}
