@@ -5,32 +5,32 @@ import { Reviews } from "./components/AllReviews/AllReviews";
 import { Route, Routes } from "react-router-dom";
 import { Nav } from "./components/Nav/Nav";
 import SingleReview from "./components/SingleReview/SingleReview.jsx";
+import Users from "./components/Users/Users";
 import "./components/Nav/Nav.css";
 import "./components/ReviewsByCategories/ReviewsByCategories.css";
 import "./components/AllReviews/AllReviews.css";
 import "./components/Header/Header.css";
 import "./components/Categories/CategoriesNav.css";
-import './components/SingleReview/SingleReview.css'
-import './components/Comments/Comments.css'
-import Users from "./components/Users/Users";
-
+import "./components/SingleReview/SingleReview.css";
+import "./components/Comments/Comments.css";
+import "./components/Users/Users.css";
 
 function App() {
-	return (
-		<div className="App">
-			<header className="App-header">
-				<Header />
-			</header>
+  return (
+    <div className="App">
+      <header className="App-header">
+        <Header />
+      </header>
 
-			<Nav />
-			<Routes>
-				<Route path="/reviews" element={<Reviews />} />
-				<Route path="/" element={<Home />} />
-				<Route path="/reviews/:review_id" element={<SingleReview />} />
-				<Route path="/users" element={<Users />} />
-			</Routes>
-		</div>
-	);
+      <Nav />
+      <Routes>
+        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/reviews/:review_id" element={<SingleReview />} />
+        <Route path="/users" element={<Users />} />
+      </Routes>
+    </div>
+  );
 }
 
 export default App;

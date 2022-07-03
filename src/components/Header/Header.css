@@ -1,18 +1,14 @@
-
 @media only screen and (max-width: 600px) {
   h1 {
-	background-color: #00ADB5;
-	margin: 0px;
-	padding: 10px;
-	/* padding-bottom: 1rem; */
-}
-
+    background-color: #00adb5;
+    margin: 0px;
+    padding: 10px;
+    /* padding-bottom: 1rem; */
+  }
 }
 h1 {
-	background-color: #00ADB5;
-	margin: 0px;
-	padding: 10px;
-	/* padding-bottom: 1rem; */
+  background-color: #00adb5;
+  margin: 0px;
+  padding: 10px;
+  /* padding-bottom: 1rem; */
 }
-
-

@@ -2,47 +2,43 @@
   background-color: rgb(157, 157, 157);
   padding: 1rem;
   padding-top: 1rem;
-  
 }
 
-.nav-home{
+.nav-home {
   margin-right: 20px;
-   border-style:inset;
-    background-color:#F8F0DF;
-    padding: 5px ;
-    border-color: #79B4B7;
+  border-style: inset;
+  background-color: #f8f0df;
+  padding: 5px;
+  border-color: #79b4b7;
 }
 
-.nav-reviews{
-   margin-right: 20px;
-   background-color:#F8F0DF;
-   padding: 5px;
-   border-style:inset;
-   border-color: #79B4B7;
-   
+.nav-reviews {
+  margin-right: 20px;
+  background-color: #f8f0df;
+  padding: 5px;
+  border-style: inset;
+  border-color: #79b4b7;
 }
 
 @media only screen and (max-width: 600px) {
- .nav-bar {
-  background-color: rgb(157, 157, 157);
-  padding: 1rem;
-  padding-top: 1rem;
-  
-}
+  .nav-bar {
+    background-color: rgb(157, 157, 157);
+    padding: 1rem;
+    padding-top: 1rem;
+  }
 
-.nav-home{
-  margin-right: 20px;
-   border-style:inset;
-    background-color:#F8F0DF;
-    padding: 5px ;
-    border-color: #79B4B7;
-}
-.nav-reviews{
-   margin-right: 20px;
-   background-color:#F8F0DF;
-   padding: 5px;
-   border-style:inset;
-   border-color: #79B4B7;
-   
-}
+  .nav-home {
+    margin-right: 20px;
+    border-style: inset;
+    background-color: #f8f0df;
+    padding: 5px;
+    border-color: #79b4b7;
+  }
+  .nav-reviews {
+    margin-right: 20px;
+    background-color: #f8f0df;
+    padding: 5px;
+    border-style: inset;
+    border-color: #79b4b7;
+  }
 }
