@@ -17,20 +17,19 @@ import "./components/Users/Users.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Header />
-      </header>
-
-      <Nav />
-      <Routes>
-        <Route path="/reviews" element={<Reviews />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/reviews/:review_id" element={<SingleReview />} />
-        <Route path="/users" element={<Users />} />
-      </Routes>
-    </div>
-  );
+		<div className="App">
+			<header className="App-header">
+				<Header />
+			</header>
+<Nav />
+			<Routes  >
+				<Route path="/reviews" element={<Reviews />} />
+				<Route path="/" element={<Home />} />
+				<Route path="/reviews/:review_id" element={<SingleReview />} />
+				<Route path="/users" element={<Users />} />
+			</Routes>
+		</div>
+	);
 }
 
 export default App;

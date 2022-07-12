@@ -1,5 +1,9 @@
 import React from "react";
+import { Nav } from "../Nav/Nav";
 
 export const Home = () => {
-  return <div>home</div>;
+  return <div>
+    <Nav/>
+    home
+  </div>;
 };

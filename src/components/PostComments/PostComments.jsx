@@ -19,7 +19,6 @@ export const PostComments = () => {
       setTheComments(postToApi);
       setDidCommentPost(true);
       setPostComments(postToApi);
-      console.log(postedComments);
     });
   };
   return (
@@ -33,5 +32,4 @@ export const PostComments = () => {
     </div>
   );
 };
-//TODOS change to onsubmit
-//TODOS when onsubmit happens something changes and that thing has to be in the dependency array
+
