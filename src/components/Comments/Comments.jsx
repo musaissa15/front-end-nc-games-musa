@@ -25,7 +25,7 @@ const Comments = () => {
               <p>{comment.body}</p>
               <h5>{comment.created_at}</h5>
               <h3>Votes:{comment.votes}</h3>
-              console.log('in the mapp');
+              
             </li>
           );
         })}

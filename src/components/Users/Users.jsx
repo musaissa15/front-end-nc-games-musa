@@ -10,7 +10,7 @@ export default function Users() {
   }, []);
   return (
 		<div>
-			<Nav />
+	
 			<ul>
 				{theUsers.map((theUser) => {
 					return (

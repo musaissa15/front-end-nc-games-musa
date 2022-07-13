@@ -1,18 +1,27 @@
-.App {
+  .App {
+    text-align: center;
+    background-color: #222831;
     display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: min-content auto auto;
-  grid-template-areas:
-    'header header'
-    'content content'
-    'content content';
-  text-align: center;
-  text-align: centre;
+    grid-template-areas: 'h h h'
+                         'n m m'
+                         'cn' ;
+    grid-template-columns: 25% auto;
+  }
 
-  background-color: #222831;
+  .header{
+    grid-area: h;
+  }
+  .reviews-list{
+    grid-area: m;
+  }
 
+  .categories-nav{
+    grid-area: cn;
+  }
 
-}
+  .nav-bar{
+    grid-area: n;
+  }
 
 @media only screen and (max-width: 600px) {
   .App {
