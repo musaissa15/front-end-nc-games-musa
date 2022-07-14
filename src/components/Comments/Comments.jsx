@@ -9,7 +9,7 @@ const Comments = () => {
   useEffect(() => {
     getCommentsById(review_id).then((commentsFromApi) => {
       setComments(commentsFromApi);
-      console.log(commentsFromApi);
+  
 ;
     });
   }, [review_id]);
@@ -24,7 +24,7 @@ const Comments = () => {
               <h4>{comment.author}</h4>
               <p>{comment.body}</p>
               <h5>{comment.created_at}</h5>
-              <h3>Votes:{comment.votes}</h3>
+              
               
             </li>
           );

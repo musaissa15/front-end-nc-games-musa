@@ -1,4 +1,30 @@
-# Getting Started with Create React App
+# NC-games Front-end
+This is a web application that allows you to view different catergories of reviewd games where you comment about the games 
+
+
+## Node version
+node v16.13.1 needed
+
+run the comand `node --version` to check the version your machine has 
+
+## How to clone Repo
+
+1. Fork the repo
+
+2. Copy the  **repo-url**  from the *Code* dropdown
+
+3. Run `git clone` **repo-url** in your terminal
+
+4. Run the command `code .` in your teminal 
+
+5. Rcun `npm i` or `npm install` in your terminal
+
+
+
+
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +93,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->

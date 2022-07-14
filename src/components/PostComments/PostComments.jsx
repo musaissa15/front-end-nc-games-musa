@@ -13,12 +13,14 @@ export const PostComments = () => {
     e.preventDefault();
 
     postTheComments(review_id, {
-      username: "jessjelly",
+      author: "jessjelly",
       body: e.target[0].value,
     }).then((postToApi) => {
       setTheComments(postToApi);
       setDidCommentPost(true);
       setPostComments(postToApi);
+      setPostComments('')
+      console.log(postToApi);
     });
   };
   return (
@@ -26,7 +28,8 @@ export const PostComments = () => {
       {didCommentPost ? <p>{postedComments.body}</p> : null}
       PostComments
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="What you Saying" />
+        <input type="text" placeholder="What you Saying"
+        />
         <button type="submit">{!didCommentPost ? "Submit" : "posted"}</button>
       </form>
     </div>
