@@ -15,23 +15,21 @@ const Comments = () => {
   }, [review_id]);
 
   return (
-    <div>
-      Comments
-      <ul>
-        {comments.map((comment) => {
-          return (
-            <li key={comment.comment_id} className="comments-container">
-              <h4>{comment.author}</h4>
-              <p>{comment.body}</p>
-              <h5>{comment.created_at}</h5>
-              
-              
-            </li>
-          );
-        })}
-      </ul>
-    </div>
-  );
+		<div>
+			<h2>Comments</h2>
+			<ul>
+				{comments.map((comment) => {
+					return (
+						<li key={comment.comment_id} className="comments-container">
+							<h4>{comment.author}</h4>
+							<p>{comment.body}</p>
+							<h5>{comment.created_at}</h5>
+						</li>
+					);
+				})}
+			</ul>
+		</div>
+	);
 };
 
 export default Comments;

@@ -24,15 +24,14 @@ export const PostComments = () => {
     });
   };
   return (
-    <div>
-      {didCommentPost ? <p>{postedComments.body}</p> : null}
-      PostComments
-      <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="What you Saying"
-        />
-        <button type="submit">{!didCommentPost ? "Submit" : "posted"}</button>
-      </form>
-    </div>
-  );
+		<div className="postComments-container">
+			{didCommentPost ? <p>{postedComments.body}</p> : null}
+			Post Comments
+			<form onSubmit={handleSubmit} className="postComments-form">
+				<input type="text" placeholder="What you Saying" />
+				<button type="submit">{!didCommentPost ? "Submit" : "posted"}</button>
+			</form>
+		</div>
+	);
 };
 

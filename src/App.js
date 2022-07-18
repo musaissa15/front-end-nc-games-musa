@@ -15,6 +15,7 @@ import "./components/SingleReview/SingleReview.css";
 import "./components/Comments/Comments.css";
 import "./components/Users/Users.css";
 import "./components/Home/Home.css"
+import "./components/PostComments/PostComments.css"
 
 function App() {
   return (

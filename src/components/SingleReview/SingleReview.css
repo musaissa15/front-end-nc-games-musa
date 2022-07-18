@@ -1,30 +1,29 @@
-@media only screen and (max-width: 600px) {}
-
-  .singleReview-container {
-    display: flexbox;
+@media only screen and (max-width: 600px) {
+    .singleReview-container {
+   display: flexbox;
     flex-wrap: wrap;
- color: white;
+    background-color: #393e46;
     margin: 20px;
     padding: 20px;
     border-style: initial;
     border: 1px solid;
-    border-color: #eeeeee;
+     border-color: #00adb5; 
+    color: white;
+  }
+}
+
+  .singleReview-container {
+   display: flexbox;
+    flex-wrap: wrap;
+    background-color: #393e46;
+    margin: 20px;
+    padding: 20px;
+    border-style: initial;
+    border: 1px solid;
+     border-color: #00adb5; 
   }
 
   .singleReview-img {
-    /* width: 90%;
-    height: auto;
-    align-items: center;
-    align-items: flex-end;
-    transform: rotate(-2deg);
-    transform: rotate(2deg);
-    margin: 15px;
-    padding: 0 5px;
-
-    background: #79b4b7;
-    border: 1px solid #222;
-    box-shadow: 3px 3px 0 #79b4b7;
-    box-shadow: 3px 3px 0; */
       width: 90%;
     height: auto;
     align-items: center;

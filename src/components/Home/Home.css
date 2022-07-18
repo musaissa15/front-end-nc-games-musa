@@ -1,17 +1,38 @@
  
 .welcome-message{
-    position: fixed;
-    left: 500px;
-    bottom: 290px;
+    justify-content: center;
+    display: inline-block;
     color: white;
     background-color: #393e46;
     margin: 20px;
     padding: 20px;
     border-style: initial;
     border: 1px solid;
-    border-color: #00adb5;
+    border-color: #00adb5; 
+    position: absolute;
+     left: 540px;
+    bottom: 270px;
+    
 }
 
 body{
      background-color: #222831;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .welcome-message{
+  justify-content: center;
+    display: inline-block;
+    color: white;
+    background-color: #393e46;
+    margin: 20px;
+    padding: 20px;
+    border-style: initial;
+    border: 1px solid;
+    border-color: #00adb5; 
+    position: absolute;
+    left: 38px;
+    bottom: 12cm;
+}
 }
