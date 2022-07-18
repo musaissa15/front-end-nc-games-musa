@@ -1,0 +1,17 @@
+ 
+.welcome-message{
+    position: fixed;
+    left: 500px;
+    bottom: 290px;
+    color: white;
+    background-color: #393e46;
+    margin: 20px;
+    padding: 20px;
+    border-style: initial;
+    border: 1px solid;
+    border-color: #00adb5;
+}
+
+body{
+     background-color: #222831;
+}

@@ -14,6 +14,7 @@ import "./components/Categories/CategoriesNav.css";
 import "./components/SingleReview/SingleReview.css";
 import "./components/Comments/Comments.css";
 import "./components/Users/Users.css";
+import "./components/Home/Home.css"
 
 function App() {
   return (

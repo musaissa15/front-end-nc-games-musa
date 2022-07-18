@@ -10,7 +10,7 @@ export const Nav = () => {
         <Link to="/reviews" className="nav-reviews">
           Reviews
         </Link>
-        <Link to="/users">Users</Link>
+        <Link to="/users" className="nav-users">Users</Link>
       </nav>
     </div>
   );
