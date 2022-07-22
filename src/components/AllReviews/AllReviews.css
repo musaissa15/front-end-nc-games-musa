@@ -135,14 +135,14 @@ a:link {
     background-color: #79b4b7;
   }
   .reviews-container {
-    display: flexbox;
+  display: flexbox;
     flex-wrap: wrap;
     background-color: #393e46;
     margin: 20px;
     padding: 20px;
     border-style: initial;
     border: 1px solid;
-    border-color: #eeeeee;
+     border-color: #00adb5; 
   }
   ul {
     padding: 5px;

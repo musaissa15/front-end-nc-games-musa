@@ -73,7 +73,7 @@ export const getReviewsByQueries = (review, sort_by, order) => {
 };
 
 export const deleteCommentsById = (comment_id) => {
-  return gamesApi.delete(`/comments/${comment_id}`).then(({data}) => {
-    
+  return gamesApi.delete(`/comments/${comment_id}`).then((res) => {
+    console.log(res)
 	});
 };

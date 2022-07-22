@@ -1,18 +1,21 @@
-import React from 'react'
-import { deleteCommentsById } from '../../utils/Api'
+import { useParams } from "react-router-dom";
+import { deleteCommentsById } from "../../utils/Api";
 
-function DeleteComments() {
-    function handleSubmit() {
-      
-  }
-  
-    return (
-        <div>
-            <h2>Delete comments</h2>
-            <button type="submit"> Delete </button>
-        </div>
-        
-  )
-}
+const DeleteComments = ({ comment }) => {
+	return (
+		<div>
+			<h2>Delete comments</h2>
 
-export default DeleteComments
+			<button
+				type="submit"
+				onClick={() => {
+					deleteCommentsById(comment.comment_id);
+				}}
+			>
+				Delete
+			</button>
+		</div>
+	);
+};
+
+export default DeleteComments;
