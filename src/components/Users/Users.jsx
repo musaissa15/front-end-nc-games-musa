@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { getUsers } from "../../utils/Api";
-import { Nav } from "../Nav/Nav";
 export default function Users() {
   const [theUsers, setTheUsers] = useState([]);
   useEffect(() => {

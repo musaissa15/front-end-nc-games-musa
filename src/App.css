@@ -1,11 +1,6 @@
   .App {
     text-align: center;
     background-color: #222831;
-    /* display: grid;
-    grid-template-areas: 'h h h'
-                         'n m m'
-                         'cn' ;
-    grid-template-columns: 25% auto; */
   }
 
   .header{

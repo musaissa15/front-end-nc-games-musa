@@ -9,9 +9,10 @@
     border-style: initial;
     border: 1px solid;
     border-color: #00adb5; 
-    position: absolute;
-     left: 545px;
-    bottom: 270px;
+   position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
     
 }
 

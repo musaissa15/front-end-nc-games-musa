@@ -1,0 +1,49 @@
+.nav-bar {
+  background-color: teal;
+  /* padding: 1rem;
+  padding-top: 1rem; */
+  
+}
+
+.nav-font{
+
+}
+
+
+a:link {
+    text-decoration: none;
+  }
+
+/* @media only screen and (max-width: 600px) {
+ .nav-bar {
+  background-color: rgb(157, 157, 157);
+  padding: 1rem;
+  padding-top: 1rem;
+}
+
+.nav-font {
+  color: white;
+}
+
+.nav-reviews {
+  margin-right: 20px;
+  padding: 5px;
+  border: 2px solid;
+  border-color: #00adb5;
+   background-color: #393e46;
+   color: white;
+}
+
+.nav-users{
+  margin-right: 20px;
+  padding: 5px;
+  border: 2px solid;
+  border-color: #00adb5;
+   background-color: #393e46;
+   color: white;
+}
+
+a:link {
+    text-decoration: none;
+  }
+} */
