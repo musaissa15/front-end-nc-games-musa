@@ -20,7 +20,6 @@ export const SortReviews = ({setReviews}) => {
 						setReviews(reviewsFromApi);
 						setIsLoading(false);
 					}
-				console.log(reviewsFromApi);
 			}
 		);
 	}, [review, sortByValue, orderByValue]);
