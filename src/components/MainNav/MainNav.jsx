@@ -14,7 +14,7 @@ export const MainNav = () => {
 				<Container className="nav-links">
 					<Navbar.Brand className="nav-brand">NC-GAMES</Navbar.Brand>
 					<Nav>
-						<div>
+						<div className="pages">
 							<Nav.Link href="/">Home</Nav.Link>
 							<Nav.Link href="/reviews">Reviews</Nav.Link>
 							<Nav.Link href="/users">Users</Nav.Link>
