@@ -11,7 +11,7 @@ background-color: teal;
 }
 
 .nav-brand{
-    
+    color: white;
 }
 
 /* .link-location{
@@ -19,5 +19,6 @@ background-color: teal;
 } */
 
 .pages{
-    
+padding: 1rem;
+color: white;
 }
