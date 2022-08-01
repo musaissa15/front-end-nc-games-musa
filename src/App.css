@@ -3,21 +3,7 @@
     background-color: #222831;
   }
 
-  .header{
-    grid-area: h;
-  }
-  .reviews-list{
-    grid-area: m;
-  }
-
-  .categories-nav{
-    grid-area: cn;
-  }
-
-  .nav-bar{
-    grid-area: n;
-  }
-
+ 
 @media only screen and (max-width: 600px) {
   .App {
     text-align: center;
