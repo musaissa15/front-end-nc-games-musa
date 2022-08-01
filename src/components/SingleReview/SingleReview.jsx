@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 import { getSingleReview, updateVotes } from "../../utils/Api";
 import Comments from "../Comments/Comments";
 import { PostComments } from "../PostComments/PostComments";
@@ -45,36 +45,32 @@ const SingleReview = () => {
   };
 
   return isLoading ? (
-    <p>... Loading</p>
-  ) : isError ? (
-    <p>ERROR please try again</p>
-  ) : (
-    <div className="singleReview-container">
-      <li>
-        <h2>{singleReview.title}</h2>
-        <img
-          src={singleReview.review_img_url}
-          alt={singleReview.title}
-          className="singleReview-img"
-        />
-        <p>{singleReview.review_body}</p>
+		<p>... Loading</p>
+	) : isError ? (
+		<p>ERROR please try again</p>
+	) : (
+		<div className="singleReview-container">
+			<li>
+				<h2>{singleReview.title}</h2>
+				<img
+					src={singleReview.review_img_url}
+					alt={singleReview.title}
+					className="singleReview-img"
+				/>
+				<p>{singleReview.review_body}</p>
 
-        <h3>{singleReview.votes + vote}</h3>
-        <button onClick={handleLikeVote} disabled={vote >= 0}>
-          👍
-        </button>
-        <button onClick={handleDislikeVote} disabled={vote > 1 || vote < 0}>
-          👎
-        </button>
+				<h3>{singleReview.votes + vote}</h3>
+				<button onClick={handleLikeVote}>👍</button>
+				<button onClick={handleDislikeVote}>👎</button>
 
-        <h4> {singleReview.owner}</h4>
-        <p>{singleReview.category}</p>
-      </li>
+				<h4> {singleReview.owner}</h4>
+				<p>{singleReview.category}</p>
+			</li>
 
-      <Comments />
-      <PostComments />
-    </div>
-  );
+			<Comments />
+			<PostComments />
+		</div>
+	);
 };
 
 export default SingleReview;

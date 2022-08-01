@@ -1,0 +1,23 @@
+.nav-links{
+background-color: teal;
+    /* position: absolute;
+		top: 5%;
+		right: 5%;
+		transform: translate(-5%, -5%);
+         */
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.nav-brand{
+    
+}
+
+/* .link-location{
+   text-align: right;
+} */
+
+.pages{
+    
+}

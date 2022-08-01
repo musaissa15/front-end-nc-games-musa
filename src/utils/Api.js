@@ -1,6 +1,6 @@
 const axios = require("axios");
 const gamesApi = axios.create({
-  baseURL: "https://exampleapp-musa113.herokuapp.com/api",
+	baseURL: "https://musasgamesapi.herokuapp.com/api",
 });
 
 export const getReviews = (category) => {
@@ -31,20 +31,22 @@ export const getSingleReview = (review_id) => {
 
 export const updateVotes = (review_id, inc_votes) => {
   return gamesApi
-    .patch(`/reviews/${review_id}`, { inc_votes })
-    .then(({ data }) => {
-      return data.review;
-    });
+  .patch(`/reviews/${review_id}`, { inc_votes })
+  .then(({ data }) => {
+    return data.review;
+  });
 };
 
 export const getCommentsById = (review_id) => {
   return gamesApi.get(`/reviews/${review_id}/comments`).then(({ data }) => {
-    return data.comments;
+
+    return data.review_idComments
   });
 };
 
 export const getUsers = () => {
-  return gamesApi.get("/users").then(({ data }) => {
+  return gamesApi.get("/users").then(({data}) => {
+  
     return data.users;
   });
 };
@@ -52,20 +54,26 @@ export const getUsers = () => {
 export const postTheComments = (review_id, body) => {
   return gamesApi
     .post(`/reviews/${review_id}/comments`, body)
-    .then(({ data }) => {
+    .then(({data}) => {
       console.log(data);
-      return data.comment;
+      return data.returnComment
+
     })
     .catch((error) => {
       console.log(error);
     });
-};
+  };
 
 export const getReviewsByQueries = (review, sort_by, order) => {
   return gamesApi
     .get(`/reviews`, { params: { review, sort_by, order } })
     .then(({ data }) => {
-      console.log(data);
       return data.reviews;
     });
+};
+
+export const deleteCommentsById = (comment_id) => {
+  return gamesApi.delete(`/comments/${comment_id}`).then((res) => {
+    console.log(res)
+	});
 };
