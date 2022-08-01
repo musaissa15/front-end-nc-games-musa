@@ -4,7 +4,7 @@ import { deleteCommentsById } from "../../utils/Api";
 const DeleteComments = ({ comment }) => {
 	return (
 		<div>
-			<h2>Delete comments</h2>
+
 
 			<button
 				type="submit"
