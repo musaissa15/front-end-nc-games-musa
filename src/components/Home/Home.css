@@ -13,7 +13,7 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-    
+    font-size: 3vw;
 }
 
 body{
@@ -22,8 +22,8 @@ body{
 
 
 @media only screen and (max-width: 600px) {
-    .welcome-message{
-  justify-content: center;
+ .welcome-message{
+    justify-content: center;
     display: inline-block;
     color: white;
     background-color: #393e46;
@@ -32,8 +32,10 @@ body{
     border-style: initial;
     border: 1px solid;
     border-color: #00adb5; 
-    position: absolute;
-    left: 38px;
-    bottom: 12cm;
+   position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+    font-size: 2vw;
 }
 }
