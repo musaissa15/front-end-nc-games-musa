@@ -20,7 +20,6 @@ export const PostComments = () => {
       setDidCommentPost(true);
       setPostComments(postToApi);
       setPostComments('')
-      console.log(postToApi);
     });
   };
   return (
