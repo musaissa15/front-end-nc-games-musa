@@ -11,7 +11,6 @@ export const SingleCategory = () => {
     });
   }, [category]);
 
-  console.log(category);
 
   return (
     <ul className="review-card">
