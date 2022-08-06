@@ -6,8 +6,7 @@ import Container from 'react-bootstrap/Container'
 
 export const Home = () => {
   return <div>
-    <Container>
-       <figure className="Position-relative">
+  
       
       <figcaption className="welcome-message">
        <h2 >
@@ -16,8 +15,7 @@ export const Home = () => {
  </figcaption>
    
     <Image src={home} alt=""  className=" img-fluid home-img rounded"/>
-   </figure>
-   </Container>
+   
    
     
   </div>
