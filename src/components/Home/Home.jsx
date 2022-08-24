@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container'
 
 
 export const Home = () => {
-  return <div>
+  return <div className="home-container">
   
       
       <figcaption className="welcome-message">
