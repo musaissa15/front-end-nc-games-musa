@@ -11,6 +11,7 @@ const DeleteComments = ({ comment }) => {
 				onClick={() => {
 					deleteCommentsById(comment.comment_id);
 				}}
+				className='delete-button'
 			>
 				Delete
 			</button>

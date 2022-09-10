@@ -14,6 +14,7 @@ import "./components/Home/Home.css"
 import "./components/PostComments/PostComments.css"
 import "./components/MainNav/MainNav.css"
 import './components/SortReviews/SortReviews.css'
+import './components/DeleteComments/DeleteComments.css'
 import {MainNav} from "./components/MainNav/MainNav";
 
 function App() {

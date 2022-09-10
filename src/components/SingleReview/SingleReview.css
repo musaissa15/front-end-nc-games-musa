@@ -1,58 +1,45 @@
+.singleReview-container {
+ background-color: #393e46;
+  margin: 120px;
+  padding: 50px;
+  border-style: initial;
+  border: 1px solid;
+  border-color: #eeeeee;
+  color: white;
+  height: 20%;
+       border-color: #00adb5; 
+}
+.singleReview-img {
+    width: 90%;
+  height: auto;
+  align-items: center;
+  align-items: flex-end;
+  transform: rotate(-2deg);
+  transform: rotate(2deg);
+  margin: 15px;
+  padding: 0 5px;
+}
+.single-review-text{
+  margin: 20px;
+  color: white;
+}
 
 
 
 @media only screen and (max-width: 600px) {
-  .singleReview-container {
+.singleReview-container {
    background-color: #393e46;
-    margin: 20px;
-    padding: 10px;
-    border-style: initial;
-    border: 1px solid;
-    border-color: #eeeeee;
-    color: white;
-    height: 20%;
-         border-color: #00adb5; 
-  }
-  .singleReview-img {
-      width: 90%;
-    height: auto;
-    align-items: center;
-    align-items: flex-end;
-    transform: rotate(-2deg);
-    transform: rotate(2deg);
-    margin: 15px;
-    padding: 0 5px;
-  }
-  .single-review-text{
-    margin: 20px;
-    color: pink;
-  }
-}
-
-   .singleReview-container {
-   display: flexbox;
-    flex-wrap: wrap;
-    background-color: #393e46;
-    margin: 20px;
+    margin: 30px;
     padding: 20px;
     border-style: initial;
     border: 1px solid;
-     border-color: #00adb5; 
-    color: white;
-  }
-  .singleReview-container {
-   background-color: #393e46;
-    margin: 20px;
-    padding: 10px;
-    border-style: initial;
-    border: 1px solid;
     border-color: #eeeeee;
     color: white;
     height: 20%;
          border-color: #00adb5; 
   }
   .singleReview-img {
-      width: 90%;
+      width: 0%;
     height: auto;
     align-items: center;
     align-items: flex-end;
@@ -63,7 +50,58 @@
   }
   .single-review-text{
     margin: 20px;
-    color: white;
   }
 
+}
+  
 
+
+   
+
+/* 
+button{
+
+  background-color: #36A9AE;
+  background-image: linear-gradient(#37ADB2, #329CA0);
+  border: 1px solid #2A8387;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  line-height: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 11px 15px 12px;
+  text-align: center;
+  transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+button:hover {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+  text-decoration: none;
+  transition-duration: .15s, .15s;
+}
+
+button:active {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: .6;
+}
+
+button:disabled:active {
+  pointer-events: none;
+}
+
+button:disabled:hover {
+  box-shadow: none;
+} */
