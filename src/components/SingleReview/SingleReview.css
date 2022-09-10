@@ -1,28 +1,18 @@
+
+
+
 @media only screen and (max-width: 600px) {
-    .singleReview-container {
-   display: flexbox;
-    flex-wrap: wrap;
-    background-color: #393e46;
-    margin: 20px;
-    padding: 20px;
-    border-style: initial;
-    border: 1px solid;
-     border-color: #00adb5; 
-    color: white;
-  }
-}
-
   .singleReview-container {
-   display: flexbox;
-    flex-wrap: wrap;
-    background-color: #393e46;
+   background-color: #393e46;
     margin: 20px;
-    padding: 20px;
+    padding: 10px;
     border-style: initial;
     border: 1px solid;
-     border-color: #00adb5; 
+    border-color: #eeeeee;
+    color: white;
+    height: 20%;
+         border-color: #00adb5; 
   }
-
   .singleReview-img {
       width: 90%;
     height: auto;
@@ -33,4 +23,47 @@
     margin: 15px;
     padding: 0 5px;
   }
+  .single-review-text{
+    margin: 20px;
+    color: pink;
+  }
+}
+
+   .singleReview-container {
+   display: flexbox;
+    flex-wrap: wrap;
+    background-color: #393e46;
+    margin: 20px;
+    padding: 20px;
+    border-style: initial;
+    border: 1px solid;
+     border-color: #00adb5; 
+    color: white;
+  }
+  .singleReview-container {
+   background-color: #393e46;
+    margin: 20px;
+    padding: 10px;
+    border-style: initial;
+    border: 1px solid;
+    border-color: #eeeeee;
+    color: white;
+    height: 20%;
+         border-color: #00adb5; 
+  }
+  .singleReview-img {
+      width: 90%;
+    height: auto;
+    align-items: center;
+    align-items: flex-end;
+    transform: rotate(-2deg);
+    transform: rotate(2deg);
+    margin: 15px;
+    padding: 0 5px;
+  }
+  .single-review-text{
+    margin: 20px;
+    color: white;
+  }
+
 

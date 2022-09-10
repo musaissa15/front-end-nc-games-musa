@@ -56,17 +56,21 @@ const SingleReview = () => {
 					src={singleReview.review_img_url}
 					alt={singleReview.title}
 					className="singleReview-img"
-				/>
-				<p>{singleReview.review_body}</p>
+            />
+            <div>
+				<p className="single-review-text">{singleReview.review_body}</p>
+            </div>
 
 				<h3>{singleReview.votes + vote}</h3>
 				<button onClick={handleLikeVote}>👍</button>
 				<button onClick={handleDislikeVote}>👎</button>
 
-				<h4> {singleReview.owner}</h4>
-				<p>{singleReview.category}</p>
+				<h4> Owner: {singleReview.owner}</h4>
+				<h4> Category: {singleReview.category}</h4>
 			</li>
-
+          <br />
+          <br />
+          <br />
 			<Comments />
 			<PostComments />
 		</div>
