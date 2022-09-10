@@ -20,7 +20,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 30%;
+  width: 10%;
 }
 
 .delete-button:hover {

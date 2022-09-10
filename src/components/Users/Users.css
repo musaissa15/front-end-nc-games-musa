@@ -11,3 +11,24 @@
   box-shadow: 3px 3px 0 #79b4b7;
   box-shadow: 3px 3px 0;
 }
+
+.user-username{
+  color: white;
+}
+@media screen and (max-width: 600px){
+  .user-img {
+  width: 17rem;
+  transform: rotate(-2deg);
+  transform: rotate(2deg);
+  margin: 15px;
+  padding: 0 5px;
+  background: #79b4b7;
+  border: 1px solid #222;
+  box-shadow: 3px 3px 0 #79b4b7;
+  box-shadow: 3px 3px 0;
+}
+
+.user-username{
+  color: white;
+}
+}

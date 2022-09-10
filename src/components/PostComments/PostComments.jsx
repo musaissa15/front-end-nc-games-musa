@@ -25,10 +25,12 @@ export const PostComments = () => {
   return (
 		<div className="postComments-container">
 			{didCommentPost ? <p>{postedComments.body}</p> : null}
-			Post Comments
+      Post Comments
+      <br />
+      <br />
 			<form onSubmit={handleSubmit} className="postComments-form">
-				<input type="text" placeholder="What you Saying" />
-				<button type="submit">{!didCommentPost ? "Submit" : "posted"}</button>
+				<input type="text" placeholder="What you Saying?" />
+				<button type="submit" className="submit-button">{!didCommentPost ? "Submit" : "posted"}</button>
 			</form>
 		</div>
 	);

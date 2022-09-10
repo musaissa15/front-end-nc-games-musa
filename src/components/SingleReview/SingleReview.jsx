@@ -52,25 +52,30 @@ const SingleReview = () => {
 		<div className="singleReview-container">
 			<li>
 				<h2>{singleReview.title}</h2>
+				<div className="owner-and-category-text">
+					<h4> Owner: {singleReview.owner}</h4>
+					<h4> Category: {singleReview.category}</h4>
+				</div>
 				<img
 					src={singleReview.review_img_url}
 					alt={singleReview.title}
 					className="singleReview-img"
-            />
-            <div>
-				<p className="single-review-text">{singleReview.review_body}</p>
-            </div>
+				/>
+				<div>
+					<p className="single-review-text">{singleReview.review_body}</p>
+				</div>
 
 				<h3>{singleReview.votes + vote}</h3>
-				<button onClick={handleLikeVote}>👍</button>
-				<button onClick={handleDislikeVote}>👎</button>
-
-				<h4> Owner: {singleReview.owner}</h4>
-				<h4> Category: {singleReview.category}</h4>
+				<button onClick={handleLikeVote} className="vote-button">
+					👍
+				</button>
+				<button onClick={handleDislikeVote} className="vote-button">
+					👎
+				</button>
 			</li>
-          <br />
-          <br />
-          <br />
+			<br />
+			<br />
+			<br />
 			<Comments />
 			<PostComments />
 		</div>
