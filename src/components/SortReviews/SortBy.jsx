@@ -9,9 +9,9 @@ const SortBy = ({ sortByValue, setSortByValue, setSearchTerm }) => {
 	return (
 		<div>
 			<label className="query-options">
-				<h3>sort by:</h3>
+				<h3 className="sort-by">sort by:</h3>
 				<select
-					className="dropdown"
+					className="order-btn"
 					onChange={handleChange}
 					value={sortByValue}
 				>
