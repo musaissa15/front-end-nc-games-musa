@@ -14,7 +14,7 @@ export default function Users() {
 				{theUsers.map((theUser) => {
 					return (
 						<li key={theUser.username}>
-							<h4>{theUser.username}</h4>
+							<h4 className="user-username">{theUser.username}</h4>
 							<img
 								src={theUser.avatar_url}
 								alt={theUser.username}

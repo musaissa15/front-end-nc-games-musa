@@ -7,11 +7,11 @@ const SortBy = ({ sortByValue, setSortByValue, setSearchTerm }) => {
 	};
 
 	return (
-		<>
-			<label>
-				sort by:
+		<div>
+			<label className="query-options">
+				<h3 className="sort-by">sort by:</h3>
 				<select
-					className="dropdown"
+					className="order-btn"
 					onChange={handleChange}
 					value={sortByValue}
 				>
@@ -21,7 +21,7 @@ const SortBy = ({ sortByValue, setSortByValue, setSearchTerm }) => {
 					<option value="title">Title</option>
 				</select>
 			</label>
-		</>
+		</div>
 	);
 };
 

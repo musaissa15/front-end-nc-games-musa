@@ -1,67 +1,5 @@
-.singleReview-container {
- background-color: #393e46;
-  margin: 120px;
-  padding: 50px;
-  border-style: initial;
-  border: 1px solid;
-  border-color: #eeeeee;
-  color: white;
-  height: 20%;
-       border-color: #00adb5; 
-}
-.singleReview-img {
-    width: 90%;
-  height: auto;
-  align-items: center;
-  align-items: flex-end;
-  transform: rotate(-2deg);
-  transform: rotate(2deg);
-  margin: 15px;
-  padding: 0 5px;
-}
-.single-review-text{
-  margin: 20px;
-  color: white;
-}
-
-.owner-and-category-text{
-  color: teal;
-}
-
-@media only screen and (max-width: 600px) {
-.singleReview-container {
-   background-color: #393e46;
-    margin: 30px;
-    padding: 20px;
-    border-style: initial;
-    border: 1px solid;
-    border-color: #eeeeee;
-    color: white;
-    height: 20%;
-         border-color: #00adb5; 
-  }
-  .singleReview-img {
-      width: 0%;
-    height: auto;
-    align-items: center;
-    align-items: flex-end;
-    transform: rotate(-2deg);
-    transform: rotate(2deg);
-    margin: 15px;
-    padding: 0 5px;
-  }
-  .single-review-text{
-    margin: 20px;
-  }
-.owner-and-category-text{
-  color: teal;
-}
-}
-  
-
-
-   .vote-button{
-
+.order-btn{
+margin: 20px;
   background-color: #36A9AE;
   background-image: linear-gradient(#37ADB2, #329CA0);
   border: 1px solid #2A8387;
@@ -74,7 +12,6 @@
   font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 17px;
   line-height: 100%;
-  margin: 10px;
   outline: 0;
   padding: 11px 15px 12px;
   text-align: center;
@@ -82,36 +19,39 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 20%;
+  width: 10%;
 }
 
-.vote-button:hover {
+.order-btn:hover {
   box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
   text-decoration: none;
   transition-duration: .15s, .15s;
 }
 
-.vote-button:active {
+.order-btn:active {
   box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
 }
 
-.vote-button:disabled {
+.order-btn:disabled {
   cursor: not-allowed;
   opacity: .6;
 }
 
-.vote-button:disabled:active {
+.order-btn:disabled:active {
   pointer-events: none;
 }
 
-.vote-button:disabled:hover {
+.order-btn:disabled:hover {
   box-shadow: none;
 }
 
+.sort-by{
+    color: white;
+}
 
-/* 
-button{
-
+@media only screen and (max-width: 600px) {
+    .order-btn{
+margin: 20px;
   background-color: #36A9AE;
   background-image: linear-gradient(#37ADB2, #329CA0);
   border: 1px solid #2A8387;
@@ -119,11 +59,11 @@ button{
   box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
   color: #FFFFFF;
   cursor: pointer;
-  display: block;
+  display: inline-block;
+  justify-content: center;
   font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 17px;
   line-height: 100%;
-  margin: 0;
   outline: 0;
   padding: 11px 15px 12px;
   text-align: center;
@@ -131,28 +71,33 @@ button{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 100%;
+  width: 35%;
 }
 
-button:hover {
+.order-btn:hover {
   box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
   text-decoration: none;
   transition-duration: .15s, .15s;
 }
 
-button:active {
+.order-btn:active {
   box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
 }
 
-button:disabled {
+.order-btn:disabled {
   cursor: not-allowed;
   opacity: .6;
 }
 
-button:disabled:active {
+.order-btn:disabled:active {
   pointer-events: none;
 }
 
-button:disabled:hover {
+.order-btn:disabled:hover {
   box-shadow: none;
-} */
+}
+
+.sort-by{
+    color: white;
+}
+}

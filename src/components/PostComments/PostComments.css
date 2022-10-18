@@ -1,8 +1,80 @@
+.postComments-container{
+    position: relative;
+    width: 250px;
+    margin: 7% auto;
+    padding: 10px;
+    border:  #00adb5 solid 12px;
+    border-top:  #00adb5 solid 12px;
+    border-left:  #00adb5 solid 12px;
+    border-bottom:  #00adb5 solid 12px;
+    box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px  #00adb5, 0px 0px 0px 4px  #00adb5, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+    background-image: radial-gradient( circle at left 30%, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3) 80px, rgba(34, 34, 34, 0.5) 100px, rgba(51, 51, 51, 0.5) 160px, rgba(51, 51, 51, 0.5)), linear-gradient( 215deg, transparent, transparent 100px, #222 260px, #222 320px, transparent), radial-gradient( circle at right, #111, rgba(51, 51, 51, 1));
+    background-color: #333;
+}
+input,
+textarea {
+    vertical-align: middle;
+    padding-left: 10px;
+    background: none;
+    border: none;
+    
+    color: rgba(238, 238, 238, 0.8);
+    line-height: .6em;
+    outline: none;
+}
+
+.submit-button{
+
+  background-color: #36A9AE;
+  background-image: linear-gradient(#37ADB2, #329CA0);
+  border: 1px solid #2A8387;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  justify-content: center;
+  font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  line-height: 5%;
+  margin: 0;
+  outline: 0;
+  padding: 11px 15px 12px;
+  text-align: center;
+  transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 35%;
+}
+
+.submit-button:hover {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+  text-decoration: none;
+  transition-duration: .15s, .15s;
+}
+
+.submit-button:active {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+
+.submit-button:disabled {
+  cursor: not-allowed;
+  opacity: .6;
+}
+
+.submit-button:disabled:active {
+  pointer-events: none;
+}
+
+.submit-button:disabled:hover {
+  box-shadow: none;
+}
 @media only screen and (max-width: 600px) {
 .postComments-container{
     position: relative;
-    width: 250px;
-    margin: 7% auto;
+    width: 200px;
+    margin: 20% auto;
     padding: 10px;
     border:  #00adb5 solid 12px;
     border-top:  #00adb5 solid 12px;
@@ -24,30 +96,52 @@ textarea {
     outline: none;
 }
 
+.submit-button{
+
+  background-color: #36A9AE;
+  background-image: linear-gradient(#37ADB2, #329CA0);
+  border: 1px solid #2A8387;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  justify-content: center;
+  font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  line-height: 5%;
+  margin: 20px;
+  outline: 0;
+  padding: 11px 15px 12px;
+  text-align: center;
+  transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 40%;
 }
 
+.submit-button:hover {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+  text-decoration: none;
+  transition-duration: .15s, .15s;
+}
 
-.postComments-container{
-    position: relative;
-    width: 250px;
-    margin: 7% auto;
-    padding: 10px;
-    border:  #00adb5 solid 12px;
-    border-top:  #00adb5 solid 12px;
-    border-left:  #00adb5 solid 12px;
-    border-bottom:  #00adb5 solid 12px;
-    box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px  #00adb5, 0px 0px 0px 4px  #00adb5, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
-    background-image: radial-gradient( circle at left 30%, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3) 80px, rgba(34, 34, 34, 0.5) 100px, rgba(51, 51, 51, 0.5) 160px, rgba(51, 51, 51, 0.5)), linear-gradient( 215deg, transparent, transparent 100px, #222 260px, #222 320px, transparent), radial-gradient( circle at right, #111, rgba(51, 51, 51, 1));
-    background-color: #333;
+.submit-button:active {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
 }
-input,
-textarea {
-    vertical-align: middle;
-    padding-left: 10px;
-    background: none;
-    border: none;
-    
-    color: rgba(238, 238, 238, 0.8);
-    line-height: .6em;
-    outline: none;
+
+.submit-button:disabled {
+  cursor: not-allowed;
+  opacity: .6;
 }
+
+.submit-button:disabled:active {
+  pointer-events: none;
+}
+
+.submit-button:disabled:hover {
+  box-shadow: none;
+}
+}
+

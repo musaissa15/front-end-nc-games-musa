@@ -15,9 +15,15 @@ export const MainNav = () => {
 					<Navbar.Brand className="nav-brand">NC-GAMES</Navbar.Brand>
 					<Nav>
 						<div>
-							<Nav.Link href="/">Home</Nav.Link>
-							<Nav.Link href="/reviews">Reviews</Nav.Link>
-							<Nav.Link href="/users">Users</Nav.Link>
+							<Nav.Link href="/" className="pages">
+								Home
+							</Nav.Link>
+							<Nav.Link href="/reviews" className="pages">
+								Reviews
+							</Nav.Link>
+							<Nav.Link href="/users" className="pages">
+								Users
+							</Nav.Link>
 						</div>
 					</Nav>
 				</Container>
