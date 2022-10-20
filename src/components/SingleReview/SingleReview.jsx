@@ -8,8 +8,10 @@ const SingleReview = () => {
 	const { review_id } = useParams();
 	const [singleReview, setSingleReview] = useState();
 	const [isLoading, setIsLoading] = useState(true);
-	const [vote, setVote] = useState(null);
-	const [isError, setIsError] = useState(false);
+	const [vote, setVote] = useState(0);
+  const [isError, setIsError] = useState(false);
+  const [disableLikeBtn, setDisableLikeBtn] = useState(false);
+    const [disableDislikeBtn, setDisableDislikeBtn] = useState(false);
 
 	useEffect(() => {
 		getSingleReview(review_id).then((singleReviewFromApi) => {
@@ -19,7 +21,10 @@ const SingleReview = () => {
 	}, [review_id]);
 
 	const handleLikeVote = () => {
-		setVote((currCount) => currCount + 1);
+    setVote((currCount) => {
+     setDisableLikeBtn(true)
+     return currCount + 1;
+    });
 		updateVotes(review_id, 1).catch((error) => {
 			if (error) {
 				setIsError(true);
@@ -32,7 +37,8 @@ const SingleReview = () => {
 
 	const handleDislikeVote = () => {
 		setVote((currCount) => {
-			return currCount - 1;
+     setDisableDislikeBtn(true);
+      return currCount - 1;
 		});
 		updateVotes(review_id, -1).catch((error) => {
 			if (error) {
@@ -69,14 +75,14 @@ const SingleReview = () => {
 				<button
 					onClick={handleLikeVote}
 					className="vote-button"
-					disabled={vote}
+					disabled={disableLikeBtn}
 				>
 					👍
 				</button>
 				<button
 					onClick={handleDislikeVote}
 					className="vote-button"
-					disabled={vote}
+					disabled={disableDislikeBtn}
 				>
 					👎
 				</button>
