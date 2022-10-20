@@ -1,50 +1,50 @@
 import { useEffect, useState } from "react";
-import {  useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { getSingleReview, updateVotes } from "../../utils/Api";
 import Comments from "../Comments/Comments";
 import { PostComments } from "../PostComments/PostComments";
 
 const SingleReview = () => {
-  const { review_id } = useParams();
-  const [singleReview, setSingleReview] = useState();
-  const [isLoading, setIsLoading] = useState(true);
-  const [vote, setVote] = useState(0);
-  const [isError, setIsError] = useState(false);
+	const { review_id } = useParams();
+	const [singleReview, setSingleReview] = useState();
+	const [isLoading, setIsLoading] = useState(true);
+	const [vote, setVote] = useState(null);
+	const [isError, setIsError] = useState(false);
 
-  useEffect(() => {
-    getSingleReview(review_id).then((singleReviewFromApi) => {
-      setSingleReview(singleReviewFromApi);
-      setIsLoading(false);
-    });
-  }, [review_id]);
+	useEffect(() => {
+		getSingleReview(review_id).then((singleReviewFromApi) => {
+			setSingleReview(singleReviewFromApi);
+			setIsLoading(false);
+		});
+	}, [review_id]);
 
-  const handleLikeVote = () => {
-    setVote((currCount) => currCount + 1);
-    updateVotes(review_id, 1).catch((error) => {
-      if (error) {
-        setIsError(true);
-        setVote((currCount) => {
-          return currCount - 1;
-        });
-      }
-    });
-  };
+	const handleLikeVote = () => {
+		setVote((currCount) => currCount + 1);
+		updateVotes(review_id, 1).catch((error) => {
+			if (error) {
+				setIsError(true);
+				setVote((currCount) => {
+					return currCount - 1;
+				});
+			}
+		});
+	};
 
-  const handleDislikeVote = () => {
-    setVote((currCount) => {
-      return currCount - 1;
-    });
-    updateVotes(review_id, -1).catch((error) => {
-      if (error) {
-        setIsError(true);
-        setVote((currCount) => {
-          return currCount + 1;
-        });
-      }
-    });
-  };
+	const handleDislikeVote = () => {
+		setVote((currCount) => {
+			return currCount - 1;
+		});
+		updateVotes(review_id, -1).catch((error) => {
+			if (error) {
+				setIsError(true);
+				setVote((currCount) => {
+					return currCount + 1;
+				});
+			}
+		});
+	};
 
-  return isLoading ? (
+	return isLoading ? (
 		<p>... Loading</p>
 	) : isError ? (
 		<p>ERROR please try again</p>
@@ -66,10 +66,18 @@ const SingleReview = () => {
 				</div>
 
 				<h3>{singleReview.votes + vote}</h3>
-				<button onClick={handleLikeVote} className="vote-button">
+				<button
+					onClick={handleLikeVote}
+					className="vote-button"
+					disabled={vote}
+				>
 					👍
 				</button>
-				<button onClick={handleDislikeVote} className="vote-button">
+				<button
+					onClick={handleDislikeVote}
+					className="vote-button"
+					disabled={vote}
+				>
 					👎
 				</button>
 			</li>
