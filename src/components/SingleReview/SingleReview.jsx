@@ -9,9 +9,9 @@ const SingleReview = () => {
 	const [singleReview, setSingleReview] = useState();
 	const [isLoading, setIsLoading] = useState(true);
 	const [vote, setVote] = useState(0);
-  const [isError, setIsError] = useState(false);
-  const [disableLikeBtn, setDisableLikeBtn] = useState(false);
-    const [disableDislikeBtn, setDisableDislikeBtn] = useState(false);
+	const [isError, setIsError] = useState(false);
+	const [disableLikeBtn, setDisableLikeBtn] = useState(false);
+	const [disableDislikeBtn, setDisableDislikeBtn] = useState(false);
 
 	useEffect(() => {
 		getSingleReview(review_id).then((singleReviewFromApi) => {
@@ -21,10 +21,11 @@ const SingleReview = () => {
 	}, [review_id]);
 
 	const handleLikeVote = () => {
-    setVote((currCount) => {
-     setDisableLikeBtn(true)
-     return currCount + 1;
-    });
+		setVote((currCount) => {
+			setDisableLikeBtn((curr) => !curr);
+			setDisableDislikeBtn(false);
+			return currCount + 1;
+		});
 		updateVotes(review_id, 1).catch((error) => {
 			if (error) {
 				setIsError(true);
@@ -37,8 +38,9 @@ const SingleReview = () => {
 
 	const handleDislikeVote = () => {
 		setVote((currCount) => {
-     setDisableDislikeBtn(true);
-      return currCount - 1;
+			setDisableDislikeBtn((curr) => !curr);
+			setDisableLikeBtn(false);
+			return currCount - 1;
 		});
 		updateVotes(review_id, -1).catch((error) => {
 			if (error) {
