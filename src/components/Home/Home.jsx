@@ -1,7 +1,7 @@
 import React from "react";
 import home from '../Home/home.png'
 import Image from 'react-bootstrap/Image'
-import Container from 'react-bootstrap/Container'
+
 
 
 export const Home = () => {
