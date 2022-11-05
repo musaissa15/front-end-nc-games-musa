@@ -17,20 +17,28 @@ import './components/SortReviews/SortReviews.css'
 import './components/DeleteComments/DeleteComments.css'
 import './components/SortReviews/OrderBy.css'
 import {MainNav} from "./components/MainNav/MainNav";
+import {useState} from 'react'
+import {UserContext} from './Context/UserContext'
 
 function App() {
+	const [user, setUser] = useState({
+		
+		name: 'guest', username: 'guest', avatar_url:
+			"https://www.gardeningknowhow.com/wp-content/uploads/2017/07/hardwood-tree.jpg"
+	});
   return (
-		<div className="App">
-			<header className="App-header">
-			</header>
-< MainNav/>
-			<Routes  >
-				<Route path="/reviews" element={<Reviews />} />
-				<Route path="/" element={<Home />} />
-				<Route path="/reviews/:review_id" element={<SingleReview />} />
-				<Route path="/users" element={<Users />} />
-			</Routes>
-		</div>
+		<UserContext.Provider value={{ user, setUser}}>
+			<div className="App">
+				<header className="App-header"></header>
+				<MainNav />
+				<Routes>
+					<Route path="/reviews" element={<Reviews />} />
+					<Route path="/" element={<Home />} />
+					<Route path="/reviews/:review_id" element={<SingleReview />} />
+					<Route path="/users" element={<Users />} />
+				</Routes>
+			</div>
+		</UserContext.Provider>
 	);
 }
 

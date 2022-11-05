@@ -1,25 +1,36 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
+import { UserContext } from "../../Context/UserContext";
 import { getUsers } from "../../utils/Api";
+
 export default function Users() {
-  const [theUsers, setTheUsers] = useState([]);
-  useEffect(() => {
-    getUsers().then((usersFromApi) => {
-      setTheUsers(usersFromApi);
-    });
-  }, []);
-  return (
+	const [allUsers, setAllUsers] = useState([]);
+	const loggedInUser = useContext(UserContext);
+
+	useEffect(() => {
+		getUsers().then((usersFromApi) => {
+			setAllUsers(usersFromApi);
+		});
+	}, []);
+
+	return (
 		<div>
-	
 			<ul>
-				{theUsers.map((theUser) => {
+				{allUsers.map((user) => {
 					return (
-						<li key={theUser.username}>
-							<h4 className="user-username">{theUser.username}</h4>
+						<li key={user.username}>
+							<h4 className="user-username">{user.username}</h4>
 							<img
-								src={theUser.avatar_url}
-								alt={theUser.username}
+								src={user.avatar_url}
+								alt={user.username}
 								className="user-img"
 							/>
+							<button
+								onClick={() => {
+									loggedInUser.setUser(user);
+								}}
+							>
+								Login as {user.name}
+							</button>
 						</li>
 					);
 				})}
