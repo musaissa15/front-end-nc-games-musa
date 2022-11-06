@@ -40,7 +40,7 @@
     height: 20%;
          border-color: #00adb5; 
   }
-  /* .singleReview-img {
+  .singleReview-img {
       width: 0%;
     height: auto;
     align-items: center;
@@ -49,7 +49,7 @@
     transform: rotate(2deg);
     margin: 15px;
     padding: 0 5px;
-  } */
+  }
   .single-review-text{
     margin: 20px;
   }

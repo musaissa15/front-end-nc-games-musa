@@ -13,27 +13,32 @@ export default function Users() {
 	}, []);
 
 	return (
-		<div>
+		<div className="all-users-container">
 			<ul>
-				{allUsers.map((user) => {
-					return (
-						<li key={user.username}>
-							<h4 className="user-username">{user.username}</h4>
-							<img
-								src={user.avatar_url}
-								alt={user.username}
-								className="user-img"
-							/>
-							<button
-								onClick={() => {
-									loggedInUser.setUser(user);
-								}}
-							>
-								Login as {user.name}
-							</button>
-						</li>
-					);
-				})}
+				
+					{allUsers.map((user) => {
+						return (
+							<li key={user.username}>
+								<div className="user-container">
+									<h4 className="user-username">{user.username}</h4>
+									<img
+										src={user.avatar_url}
+										alt={user.username}
+										className="user-img"
+									/>
+									<button
+										className="user-button"
+										onClick={() => {
+											loggedInUser.setUser(user);
+										}}
+									>
+										Login as {user.name}
+									</button>
+								</div>
+							</li>
+						);
+					})}
+				
 			</ul>
 		</div>
 	);

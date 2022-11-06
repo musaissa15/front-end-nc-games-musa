@@ -6,6 +6,11 @@ background-color: teal;
     padding: 2rem;
 }
 
+.logged-img{
+ width: 5%;
+ border-radius: 50px;
+ align-items: flex-end;
+}
 .nav-brand{
     color: white;
 }

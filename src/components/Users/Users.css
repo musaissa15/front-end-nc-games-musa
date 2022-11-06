@@ -12,6 +12,10 @@
   box-shadow: 3px 3px 0;
 }
 
+.all-users-container{
+  display: flex;
+  justify-content: center;
+}
 .user-username{
   color: white;
 }
