@@ -11,7 +11,9 @@ export const SortReviews = ({setReviews}) => {
 		sort_by: "",
 		order: "",
   });
-  const {review} = useParams()
+	const {review} = useParams()
+	
+	console.log(review);
 
   useEffect(() => {
 		getReviewsByQueries(review, sortByValue, orderByValue).then(
