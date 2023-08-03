@@ -9,7 +9,7 @@ import {UserContext} from '../../Context/UserContext'
 
 export const MainNav = () => {
 	const currentUser = useContext(UserContext);
-	console.log(currentUser.user.avatar_url);
+	
 	return (
 		<div>
 			<Navbar>
