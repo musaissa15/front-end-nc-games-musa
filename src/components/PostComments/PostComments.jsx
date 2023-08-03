@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import { postTheComments } from "../../utils/Api";
 
 export const PostComments = () => {
@@ -23,7 +23,8 @@ export const PostComments = () => {
     });
   };
   return (
-		<div className="postComments-container">
+    <div className="postComments-container">
+    
 			{didCommentPost ? <p>{postedComments.body}</p> : null}
       Post Comments
       <br />
