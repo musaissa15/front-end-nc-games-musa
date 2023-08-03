@@ -55,13 +55,10 @@ export const postTheComments = (review_id, body) => {
   return gamesApi
     .post(`/reviews/${review_id}/comments`, body)
     .then(({data}) => {
-      console.log(data);
+      
       return data.returnComment
 
     })
-    .catch((error) => {
-      console.log(error);
-    });
   };
 
 export const getReviewsByQueries = (review, sort_by, order) => {
@@ -74,6 +71,6 @@ export const getReviewsByQueries = (review, sort_by, order) => {
 
 export const deleteCommentsById = (comment_id) => {
   return gamesApi.delete(`/comments/${comment_id}`).then((res) => {
-    console.log(res)
+  
 	});
 };

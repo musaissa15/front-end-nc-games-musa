@@ -13,7 +13,7 @@ export const SortReviews = ({setReviews}) => {
   });
 	const {review} = useParams()
 	
-	console.log(review);
+	
 
   useEffect(() => {
 		getReviewsByQueries(review, sortByValue, orderByValue).then(
