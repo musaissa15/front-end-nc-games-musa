@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import CategoriesNav from "../Categories/CategoriesNav";
 import { Link } from "react-router-dom";
 import { SortReviews } from "../SortReviews/SortReviews";
-import Card from "react-bootstrap/Card";
+import Card from 'react-bootstrap/Card';
 
 export const Reviews = () => {
 	const [reviews, setReviews] = useState([]);
